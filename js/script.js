@@ -239,32 +239,19 @@
 //Now, loop through the array and filter out and display only the movie names. You must use the filter() method and you’ll need to filter out the names by their primitive data type.
 
 
+var movies = [["Avatar", 1], ["Taken", 2], ["Green Mile", 3], ["Jurassic World", 4], ["Unforgiven", 5]];
 
-//var movies = [["Avatar", 1], ["Taken", 2], ["Green Mile", 3], ["Jurassic World", 4], ["Unforgiven", 5]];
-//
-//
-//// This works but not the way you have asked for
-////movies.forEach(function(item) {
-////    window.console.log(item[0]);
-////});
-//var i;
-//    var i;
-//    for (i = 0; i < movies.length; i += 1) {
-//        window.console.log(movies[i][0] + " " + movies.filter(function([i][1]) {
-//            return typeof == "string";});
-//        });
-//    };
+movies = movies.reduce(function(a, b){
+     return a.concat(b);
+});
+
+var movieNames = movies.filter(function(item) { 
+    return typeof item == "string";
+});
+console.log(movieNames);
 
 
-//var movieNames = movies.filter(function (item) {
-//    var i;
-//    for (i = 0; i < movies.length; i += 1) {
-//        return typeof item === "string";
-//    });
-//    
-//    window.console.log(movieNames);
-//    
-//};
+
 
 // The Rock, Paper, Scissors Game 
 
