@@ -239,16 +239,17 @@
 //Now, loop through the array and filter out and display only the movie names. You must use the filter() method and you’ll need to filter out the names by their primitive data type.
 
 
-var movies = [["Avatar", 1], ["Taken", 2], ["Green Mile", 3], ["Jurassic World", 4], ["Unforgiven", 5]];
 
-movies = movies.reduce(function(a, b){
-     return a.concat(b);
-});
-
-var movieNames = movies.filter(function(item) { 
-    return typeof item == "string";
-});
-console.log(movieNames);
+//var movies = [["Avatar", 1], ["Taken", 2], ["Green Mile", 3], ["Jurassic World", 4], ["Unforgiven", 5]];
+//
+//movies = movies.reduce(function(a, b){
+//     return a.concat(b);
+//});
+//
+//var movieNames = movies.filter(function(item) { 
+//    return typeof item == "string";
+//});
+//console.log(movieNames);
 
 
 
